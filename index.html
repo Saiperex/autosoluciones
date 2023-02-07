@@ -31,11 +31,11 @@
     <div id="sidebarMenu">
         <ul class="sidebarMenuInner">
             <li><a href="#inicio">Inicio <span>AutoSoluciones AR</span></a></li>
-            <li><a href="#somos" >Quienes Somos</a></li>
-            <li><a href="#servicios" >Servicios</a></li>
-            <li><a href="#contacto" >Contacto</a></li>
-            <li><a href="#item1" >Item 1</a></li>
-            <li><a href="#item2" >Item 2</a></li>
+            <li><a href="#somos">Quienes Somos</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#item1">Item 1</a></li>
+            <li><a href="#item2">Item 2</a></li>
         </ul>
     </div>
 
@@ -59,7 +59,13 @@
                     <div class="titulo">
                         <h2>¿Quienes somos?</h2>
                         <h4>Nueva red nacional de talleres multimarca</h4>
-                        <p>Nuestra red de talleres automotrices es un grupo de establecimientos especializados en el mantenimiento y reparación de automóviles. Ofrecen una amplia gama de servicios, desde reparaciones menores hasta soluciones más complejas para problemas mecánicos, eléctricos y electronicos. Los talleres están equipados con las herramientas y tecnologías más avanzadas para garantizar una reparación rápida y eficiente. Con un equipo de profesionales altamente capacitados y dedicados, la red de talleres automotrices brinda a sus clientes un servicio confiable y de alta calidad.</p>
+                        <p>Nuestra red de talleres automotrices es un grupo de establecimientos especializados en el
+                            mantenimiento y reparación de automóviles. Ofrecen una amplia gama de servicios, desde
+                            reparaciones menores hasta soluciones más complejas para problemas mecánicos, eléctricos y
+                            electronicos. Los talleres están equipados con las herramientas y tecnologías más avanzadas
+                            para garantizar una reparación rápida y eficiente. Con un equipo de profesionales altamente
+                            capacitados y dedicados, la red de talleres automotrices brinda a sus clientes un servicio
+                            confiable y de alta calidad.</p>
                     </div>
                     <a href="#">Saber mas</a>
                 </div>
@@ -93,9 +99,53 @@
         <section id="contacto" class="mainInner">
             <div class="centrar centrar-contacto">
                 <div class="contenedor">
+                    <h2>Con quien quieres contactarte</h2>
+                    <select name="data[form_type_id]" class="chzn-select input-xlarge" id="changeForm">
+                        <option value="2">Quiero más información sobre AutoSoluciones</option>
+                        <option value="3">Quiero ser proveedor de AutoSoluciones</option>
+                        <option value="4">Quiero trabajar en un AutoSoluciones</option>
+                        <option value="5">Quiero contactarme con AutoSoluciones</option>
+                    </select>
+                    <form action="">
+                        <label for="nombreapellido">Nombre y Apellido</label>
+                        <input type="text" name="" id="nombreapellido" class="input-padron" required="" placeholder="Nombre y Apellido">
+            
+                        <label for="correoelectronico">Correo Electronico</label>
+                        <input type="email" name="" id="correoelectronico" class="input-padron" required="" placeholder="email@dominio.com">
+            
+                        <label for="telefono">telefono</label>
+                        <input type="tel" name="" id="telefono" class="input-padron" required="" placeholder="(xxx) 15(x-xxx-xxx)">
+                        <fieldset>
+                            <legend>¿Como le gustaria que lo contactemos?</legend><!--Se prefiere usar esto en vez que P para marcar texto como una leyenda-->
+            
+                            <label class="checkbox" for="radio-email"><input type="radio" name="contacto" id="radio-email" value="E-mail">E-mail</label><!--Es un boton radio que se pone de color cuando esta seleccionado-->
+                            <!--Se usa el name para enlazar los radio y asi poder seleccionar solo uno-->
+            
+                            <label class="checkbox" for="radio-telefono"><input type="radio" name="contacto" id="radio-telefono" value="Telefono">Telefono</label>
+                            
+            
+                            <label class="checkbox" for="radio-whatsapp"><input type="radio" name="contacto" id="radio-whatsapp" value="Whatsapp" checked="">Whatsapp</label>
+                            <!--El checked es la posibilidad de dejar un punto marcado por defecto-->
+                            
+                        </fieldset>
+            
+                        <fieldset>
+                            <legend>En cual horario desearia ser atendido</legend>
+                            <select name="" id=""><!--Esta etiqueta sirve para deslegar una lista de opciones-->
+                                <option value="">Mañana</option>
+                                <option value="">Tarde</option>
+                                <option value="">Noche</option>
+                            </select>
+                        </fieldset>
+                        
+                        <input type="submit" class="enviar" value="Enviar Formulario"><!--Entrada tipo boton-enviar. Con el value puedo cambiar el texto del boton-->
+            
+                    </form>
 
                 </div>
+
             </div>
+
         </section>
 
         <section id="item1" class="mainInner">
@@ -113,10 +163,10 @@
                 </div>
             </div>
         </section>
-       
+
         <script src="https://kit.fontawesome.com/c8bf7962f3.js" crossorigin="anonymous"></script>
     </main>
-    
+
 </body>
 
 </html>
