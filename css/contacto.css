@@ -27,3 +27,55 @@ form
     height: 80%;
     justify-content: space-around;
 }
+.redes
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-top: solid 2px black;
+}
+.redes legend
+{
+    font-size: 4vh;
+    font-family: 'Righteous', cursive;
+    color: white;
+}
+.redes .lista-redes
+{
+    justify-content: center;
+}
+.redes .lista-redes .red
+{
+    color: white;
+    font-size: 6vh;
+    margin-right: 2vw;
+    width: 1em;
+    height: 1em;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 1s;
+    box-sizing: border-box;
+}
+.redes .lista-redes a
+{
+    padding: 0;
+    color: #fff;
+    text-decoration: none;
+    background-color: transparent;
+}
+.f i:hover
+{
+    background-color: #0061a9;
+    border: solid 1px white;
+}
+.i i:hover
+{
+    background-color: #E1306C;
+    border: solid 1px white;
+}
+.w i:hover
+{
+    background-color: #25D366;
+    border: solid 1px white;
+}
