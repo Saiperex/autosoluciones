@@ -1,0 +1,51 @@
+#servicios
+{
+    background-color: #000000;
+}
+.centrar-servicios .contenedor
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: "titulo titulo" "item1 item2" "item3 item4";
+}
+.centrar-servicios h2
+{
+    grid-area: titulo;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
+.uno
+{
+    grid-area: item1;
+}
+.dos
+{
+    grid-area: item2;
+}
+.tres
+{
+    grid-area: item3;
+}
+.cuatro
+{
+    grid-area: item4;
+}
+.centrar-servicios .servicio
+{
+    margin: 10px;
+    border: solid 2px #fff;
+    border-radius: 10px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+.centrar-servicios i
+{
+    font-size: 50px;
+    color: #ffffff;
+}
