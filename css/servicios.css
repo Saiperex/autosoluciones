@@ -43,6 +43,11 @@
     align-items: center;
     justify-content: space-around;
     text-align: center;
+    transition: font-size 500ms ease-in-out;
+}
+.centrar-servicios .servicio:hover
+{
+    font-size: 2vh;
 }
 .centrar-servicios i
 {
