@@ -43,3 +43,25 @@
     text-align: justify;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+.consulta_contact
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.consulta_contact h2
+{
+    font-size: 4;
+}
+.consulta_contact i
+{
+    font-size: 4vh;
+    color:#fff;
+    background-color: #25D366;
+    border: solid 1px white;
+}
+.consulta_contact legend
+{
+    
+}
